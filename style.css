@@ -1,3 +1,15 @@
+nav {
+    background: rgba(0,0,0,0.8);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
 .section {
     min-height: 100vh;
     padding: 6rem 2rem 2rem;
