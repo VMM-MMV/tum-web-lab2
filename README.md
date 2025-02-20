@@ -1,22 +1,11 @@
-# Lab 2 - Landing page
+#### Crypto ~~scam~~ coin, that will make you very rich, no cap no cap.
 
-Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
+#### Don't remain poor, thrive by checking it out here: https://vmm-mmv.github.io/tum-web-lab2/
 
-## Customer requirements
+![image](https://github.com/user-attachments/assets/6800e2b0-0d7a-460e-a55f-52e78562a6bc)
 
-- Some form of navigation to sections (links, buttons)
-- Call to action
-- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
-- Pleasant to the eyes
+![image](https://github.com/user-attachments/assets/a36e0137-5f68-4d88-ab63-d3f8d265cc82)
 
-## Dev requirements
+![image](https://github.com/user-attachments/assets/b9fe5fe8-379b-41c6-9844-0a69a1785faf)
 
-- Use vanilla CSS and HTML (no frameworks)
-- Have a decent git history (no one commit)
-- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
-
-## Other requirements:
-
-- For potential maximal mark, a WIP version should be submitted during the class
-- Use index.html, reset.css
+![image](https://github.com/user-attachments/assets/7100fdc2-3487-4d15-b16a-6a0bde1ee923)
