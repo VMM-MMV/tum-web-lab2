@@ -196,6 +196,17 @@ p {
     z-index: 2;
 }
 
+#faq {
+    background: linear-gradient(to bottom, #0a192f, #112240);
+    position: relative;
+}
+
+#faq h2 {
+    color: #00ccff;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+}
+
 .faq-container {
     max-width: 800px;
     width: 100%;
@@ -231,4 +242,9 @@ p {
     line-height: 1.6;
     padding-left: 1rem;
     border-left: 3px solid rgba(0, 204, 255, 0.4);
+}
+
+#faq .cta-button {
+    background: #00ccff;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
 }
