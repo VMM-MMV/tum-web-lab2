@@ -136,15 +136,64 @@ p {
     padding-bottom: 0.5rem;
 }
 
-.testimonial {
-    background: rgba(255,255,255,0.1);
-    padding: 1.5rem;
-    border-radius: 15px;
-    margin: 1rem;
+#testimonials {
+    padding-top: 2rem;
+    background: linear-gradient(135deg, #331b3f, #20063b);
+    position: relative;
+    overflow: hidden;
+}
+
+#testimonials::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(51, 27, 63, 0.8), transparent);
+    pointer-events: none;
+}
+
+#testimonials h2 {
+    color: #ff9900;
+    text-shadow: 0 0 15px rgba(255, 153, 0, 0.6);
+    position: relative;
+}
+
+#testimonials .testimonial {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 1.75rem;
+    margin: 1.5rem;
     max-width: 600px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-left: 8px solid #00ff88;
-    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid #ff9900;
+    transform: rotate(-1deg);
+    position: relative;
+}
+
+#testimonials .testimonial:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+#testimonials .testimonial p {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+#testimonials .testimonial p:last-child {
+    margin-top: 0.75rem;
+    text-align: right;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+#testimonials .cta-button {
+    background: #ff9900;
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.6);
+    position: relative;
+    z-index: 2;
 }
 
 .faq-container {
