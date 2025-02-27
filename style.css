@@ -14,6 +14,10 @@ nav {
     width: 100%;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 nav a {
@@ -22,6 +26,7 @@ nav a {
     margin: 0 1rem;
     font-size: 1rem;
     font-weight: bold;
+    padding: 0.5rem 0;
 }
 
 .section {
@@ -37,14 +42,14 @@ nav a {
 h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.7);
+    text-shadow: 0 0 0.625rem rgba(0, 255, 136, 0.7);
 }
 
 h2 {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 h3 {
@@ -55,6 +60,9 @@ h3 {
 p {
     font-size: 1rem;
     line-height: 1.6;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-button {
@@ -62,13 +70,20 @@ p {
     color: #000;
     padding: 0.9rem 2rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-size: 1.2rem;
     margin: 1.5rem;
     cursor: pointer;
     animation: pulse 2s infinite;
     font-weight: bold;
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+    box-shadow: 0 0 1.25rem rgba(0, 255, 136, 0.6);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem rgba(0, 255, 136, 0.8);
 }
 
 @keyframes pulse {
@@ -91,7 +106,7 @@ p {
 }
 
 #hero h1, #hero h2 {
-    text-shadow: 0 0 15px rgba(0, 255, 136, 0.8);
+    text-shadow: 0 0 0.9375rem rgba(0, 255, 136, 0.8);
 }
 
 #about {
@@ -119,20 +134,22 @@ p {
 
 #about .testimonial {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     padding: 1.5rem;
     margin: 1rem auto;
-    max-width: 500px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-left: 8px solid #00ff88;
+    max-width: 31.25rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+    border-left: 0.5rem solid #00ff88;
     position: relative;
     z-index: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0.3125rem);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #about h3 {
     color: #00ff88;
-    border-bottom: 2px solid #00ff88;
+    border-bottom: 0.125rem solid #00ff88;
     padding-bottom: 0.5rem;
 }
 
@@ -156,20 +173,22 @@ p {
 
 #testimonials h2 {
     color: #ff9900;
-    text-shadow: 0 0 15px rgba(255, 153, 0, 0.6);
+    text-shadow: 0 0 0.9375rem rgba(255, 153, 0, 0.6);
     position: relative;
 }
 
 #testimonials .testimonial {
     background: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     padding: 1.75rem;
     margin: 1.5rem;
-    max-width: 600px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
-    border: 3px solid #ff9900;
+    max-width: 37.5rem;
+    box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, 0.4);
+    border: 0.1875rem solid #ff9900;
     transform: rotate(-1deg);
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #testimonials .testimonial:nth-child(even) {
@@ -191,7 +210,7 @@ p {
 
 #testimonials .cta-button {
     background: #ff9900;
-    box-shadow: 0 0 20px rgba(255, 153, 0, 0.6);
+    box-shadow: 0 0 1.25rem rgba(255, 153, 0, 0.6);
     position: relative;
     z-index: 2;
 }
@@ -204,27 +223,27 @@ p {
 #faq h2 {
     color: #00ccff;
     margin-bottom: 2.5rem;
-    text-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+    text-shadow: 0 0 0.9375rem rgba(0, 204, 255, 0.6);
 }
 
 .faq-container {
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
 }
 
 .faq-item {
     background: rgba(0, 0, 0, 0.3);
     margin: 1.25rem 0;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     padding: 1.5rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-top: 4px solid #00ccff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-top: 0.25rem solid #00ccff;
     transform: translateY(0);
     transition: transform 0.3s ease;
 }
 
 .faq-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 
 .faq-question {
@@ -241,10 +260,17 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     padding-left: 1rem;
-    border-left: 3px solid rgba(0, 204, 255, 0.4);
+    border-left: 0.1875rem solid rgba(0, 204, 255, 0.4);
 }
 
 #faq .cta-button {
     background: #00ccff;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
+    box-shadow: 0 0 1.25rem rgba(0, 204, 255, 0.6);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
