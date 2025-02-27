@@ -17,6 +17,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 nav a {
@@ -77,6 +78,12 @@ p {
     font-weight: bold;
     box-shadow: 0 0 1.25rem rgba(0, 255, 136, 0.6);
     display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem rgba(0, 255, 136, 0.8);
 }
 
 @keyframes pulse {
@@ -136,6 +143,8 @@ p {
     position: relative;
     z-index: 1;
     backdrop-filter: blur(0.3125rem);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #about h3 {
@@ -178,6 +187,8 @@ p {
     border: 0.1875rem solid #ff9900;
     transform: rotate(-1deg);
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #testimonials .testimonial:nth-child(even) {
@@ -255,4 +266,11 @@ p {
 #faq .cta-button {
     background: #00ccff;
     box-shadow: 0 0 1.25rem rgba(0, 204, 255, 0.6);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
