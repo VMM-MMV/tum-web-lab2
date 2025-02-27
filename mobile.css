@@ -34,10 +34,6 @@
         font-size: 1rem;
         line-height: 1.5;
     }
-
-    #hero {
-        padding-top: 3.5rem;
-    }
     
     #testimonials .testimonial,
     #about .testimonial,
@@ -45,5 +41,55 @@
         padding: 1.5rem;
         margin: 1rem 0;
         width: 90%;
-    }   
+    }
+    
+    #contact-mobile {
+        display: block;
+        background: linear-gradient(135deg, #0f3460, #1a1a2e);
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    
+    #contact-mobile h2 {
+        color: #00ccff;
+        margin-bottom: 1.5rem;
+        text-shadow: 0 0 0.5rem rgba(0, 204, 255, 0.6);
+    }
+    
+    .contact-info {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 0.9375rem;
+        padding: 1.5rem;
+        margin: 1rem auto;
+        max-width: 90%;
+        box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+        border-left: 0.3rem solid #00ccff;
+    }
+    
+    .contact-method {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    
+    .contact-icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        color: #00ccff;
+        min-width: 2rem;
+        text-align: center;
+    }
+    
+    .contact-text {
+        font-size: 1rem;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #contact-mobile {
+        display: none;
+    }
 }
