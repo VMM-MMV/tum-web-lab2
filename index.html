@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="mascot.css" />
   </head>
 <body>
     <nav>
@@ -15,7 +16,15 @@
       <a href="#testimonials">Testimonials</a>
       <a href="#faq">FAQ</a>
       <a href="#contact-mobile" class="mobile-only">Contact</a>
-  </nav>
+    </nav>
+    <div id="mascot-container">
+        <div id="mascot">
+            <img src="mascot.png" alt="FAF Coin Mascot" id="mascot-img">
+        </div>
+        <div id="mascot-message">
+            "STOP BEING BROKE!!! BUY THE CRYPTO!!!"
+        </div>
+    </div>
     <section id="hero" class="section">
         <h1>🚀 FAF COIN</h1>
         <h2>The Next 1000000x</h2>
@@ -119,5 +128,21 @@
         Contact Us Now! 🚀
     </button>
 </section>
+<script>
+    setTimeout(() => {
+      document.getElementById('mascot-container').style.display = 'block';
+    }, 3000);
+  
+    setInterval(() => {
+      const mascot = document.getElementById('mascot-container');
+      const randomX = Math.random() * 30 - 15;
+      
+      mascot.style.transform = `translateX(${randomX}px)`;
+      
+      setTimeout(() => {
+        mascot.style.transform = 'translateX(0)';
+      }, 1000);
+    }, 5000);
+</script>
 </body>
 </html>
