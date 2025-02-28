@@ -1,0 +1,69 @@
+#mascot-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: none;
+}
+
+#mascot {
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite, rotate 15s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.7));
+}
+
+#mascot-img {
+    width: 120px;
+    height: 120px;
+}
+
+#mascot:hover + #mascot-message,
+#mascot-message:hover {
+    display: block;
+    animation: bounce 0.5s;
+}
+
+#mascot-message {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ff88;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    display: none;
+    font-weight: bold;
+    border: 2px solid #00ff88;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+}
+
+#mascot-message:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
