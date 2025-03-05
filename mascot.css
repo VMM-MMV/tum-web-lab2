@@ -1,9 +1,22 @@
 #mascot-container {
     position: fixed;
-    right: 20px;
+    right: -250px;
     bottom: 20px;
     z-index: 1000;
-    display: none;
+    transition: right 0.5s ease-in-out;
+    animation: show-mascot 1s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes show-mascot {
+    0% { 
+        right: -250px;
+        opacity: 0;
+    }
+    100% { 
+        right: 20px;
+        opacity: 1;
+    }
 }
 
 #mascot {

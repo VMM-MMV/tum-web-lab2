@@ -128,21 +128,5 @@
         Contact Us Now! 🚀
     </button>
 </section>
-<script>
-    setTimeout(() => {
-      document.getElementById('mascot-container').style.display = 'block';
-    }, 3000);
-  
-    setInterval(() => {
-      const mascot = document.getElementById('mascot-container');
-      const randomX = Math.random() * 30 - 15;
-      
-      mascot.style.transform = `translateX(${randomX}px)`;
-      
-      setTimeout(() => {
-        mascot.style.transform = 'translateX(0)';
-      }, 1000);
-    }, 5000);
-</script>
 </body>
 </html>
