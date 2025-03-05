@@ -98,23 +98,6 @@ p {
     100% { transform: scale(1); }
 }
 
-#hero {
-    padding-top: 2rem;
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
-    background-size: 200% 200%;
-    animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-#hero h1, #hero h2 {
-    text-shadow: 0 0 0.9375rem rgba(0, 255, 136, 0.8);
-}
-
 #about {
     background: #16213e;
     position: relative;

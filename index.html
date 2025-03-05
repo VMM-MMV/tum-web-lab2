@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="mascot.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-<body>
+<body class="bg-gray-900 text-white">
     <nav>
       <a href="#hero">Home</a>
       <a href="#about">About</a>
@@ -25,13 +26,35 @@
             "STOP BEING BROKE!!! BUY THE CRYPTO!!!"
         </div>
     </div>
-    <section id="hero" class="section">
-        <h1>🚀 FAF COIN</h1>
-        <h2>The Next 1000000x</h2>
-        <h2>WE ARE NOT A SCAM🦅🦅🦅</h2>
-        <h2>BECOME BO$$TANOLIONAIRE</h2>
-        <p>Powered by AI, Blockchain, NFTs, and BO$$TAN</p>
-        <button class="cta-button" onclick="alert('SEND YOUR LIVE SAVINGS, OR YOU\'RE POOR')">
+    <section 
+        id="hero" 
+        class="min-h-screen mt-8 flex flex-col items-center justify-center text-center 
+                bg-gradient-to-br from-[#1a1a2e] to-[#0f3460] 
+                px-4 py-16">
+        <h1 class="text-6xl font-bold mb-6 text-white 
+                    drop-shadow-[0_0_10px_rgba(0,255,136,0.7)]">
+            🚀 FAF COIN
+        </h1>
+        <h2 class="text-4xl uppercase tracking-wide mb-6 text-white 
+                    drop-shadow-[0_0_15px_rgba(0,255,136,0.8)]">
+            The Next 1000000x
+        </h2>
+        <h2 class="text-4xl uppercase tracking-wide mb-6 text-white 
+                    drop-shadow-[0_0_15px_rgba(0,255,136,0.8)]">
+            WE ARE NOT A SCAM 🦅🦅🦅
+        </h2>
+        <h2 class="text-4xl uppercase tracking-wide mb-6 text-white 
+                    drop-shadow-[0_0_15px_rgba(0,255,136,0.8)]">
+            BECOME BO$$TANOLIONAIRE
+        </h2>
+        <p class="text-xl mb-8 text-white max-w-2xl">
+            Powered by AI, Blockchain, NFTs, and BO$$TAN
+        </p>
+        <button 
+            class="bg-[#00ff88] text-black font-bold py-3 px-8 rounded-full 
+                    text-xl hover:scale-105 transition-transform 
+                    animate-pulse shadow-[0_0_20px_rgba(0,255,136,0.6)]"
+            onclick="alert('SEND YOUR LIVE SAVINGS, OR YOU\'RE POOR')">
             Buy Now Before It's Too Late! 🚀
         </button>
     </section>
